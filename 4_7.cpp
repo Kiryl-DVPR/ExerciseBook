@@ -19,13 +19,11 @@ int main()
        cout << endl << i << "<=" << y;
     
     //Возведение x в степень у. 4_8:
-    while (i<=y)
+    while (i<=y)  
     {
         power=power*x;
         i=i+1;
     }
 
-    cout << endl << power;
-    
-    
+    cout << endl << power; 
 }
