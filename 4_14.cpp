@@ -11,7 +11,7 @@ int main()
     float CreditLimit;
     float NewBalance;
 
-    cout << "Enter Account Number: " ;
+    cout << "Enter Account Number (or -1 for quit): " ;
     cin >> AccountNumber;
 
 while (AccountNumber!=-1)
@@ -42,7 +42,7 @@ while (AccountNumber!=-1)
         cout << "Сredit limit exceeded!!!" << endl;
     }
 
-    cout << endl<< "Enter Account Number: " ;
+    cout << endl<< "Enter Account Number (or -1 for quit): " ;
     cin >> AccountNumber;
     
 }
