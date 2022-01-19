@@ -13,15 +13,25 @@ int main()
 
     while ( WorkHours!=-1 )
     {
+        cout << "Enter the hourly of rate: "; //Введите число рабочих часов
+        cin >> HourlyRate;
         if ( WorkHours<=40 )
         {
             Salary=HourlyRate*WorkHours;
 
-            cout << " Salary: " << Salary;
+            cout << "Salary: " << Salary <<endl;
         }
         else 
-            Salary=WorkHours-40;
+            {
+            
+            Salary=( WorkHours%40 )*( HourlyRate*1.5 )+40*HourlyRate;
+
+            cout << "Salary: " << Salary << endl;
+
+            }
         
+        cout << "Enter the number of working hours (or -1 for quit): "; //Введите число рабочих часов
+    cin >> WorkHours;
     }
     
 }
