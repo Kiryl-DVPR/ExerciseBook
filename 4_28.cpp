@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a=1;
-    int c=1;
-    int b=1;
+    int a=1;//Счётчик для первой строки
+    int c=1;//Счётчик для второй строки
+    int b=1;//Счётчик для двух стрк(1-ой и 2-ой)
 
     while(b<=4)
     {   
@@ -27,9 +27,10 @@ int main()
             cout << "* ";
             ++c;
         }
+
         cout << endl;
+
         ++b;
-    }
-    
+    }  
 
 }
